@@ -13,7 +13,7 @@ export default {
 
 <style>
 .scores {
-    padding: 5px 0 0 10px;
+    padding: 15px 0 0 20px;
     position: absolute;
 }
 </style>

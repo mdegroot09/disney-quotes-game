@@ -1,8 +1,11 @@
 <template>
-  <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-  <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   <HighScores/>
   <Background/>
+  <div id="nav">
+    <!-- <router-link to="/">Home</router-link>
+    <router-link to="/quiz">Quiz</router-link> -->
+  </div>
+  <router-view/>
 </template>
 
 <script>

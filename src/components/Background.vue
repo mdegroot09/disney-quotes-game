@@ -22,6 +22,7 @@
     top: 0;
     right: 0;
     padding-bottom: 100px;
+    padding-left: 40px;
     transform: scale(-1, 1) rotate(-45deg);
     max-height: 200px;
 }
