@@ -4,7 +4,7 @@
       <span class="text-center">The Movie Quoter</span>
     </h1>
     <h3 class="text-center text-xl m-7">
-      Discover just how bad you are at movie quotes
+      Discover just how bad you are at quoting movies
     </h3>
     <div class="h-full grid justify-center items-start">
       <router-link to="/quiz" class="bg-blue-800 h-14 w-28 text-center text-white grid items-center rounded-lg">
