@@ -2,17 +2,20 @@
   <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
   <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   <HighScores/>
+  <Background/>
 </template>
 
 <script>
 import HighScores from './components/HighScores.vue'
+import Background from './components/Background.vue'
 import movieQuote from 'popular-movie-quotes'
 import './assets/tailwind.css'
 
 export default {
   name: 'App',
   components: {
-    HighScores
+    HighScores,
+    Background
   },
   mounted(){
     let quotes = movieQuote.getAll()
