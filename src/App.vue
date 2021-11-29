@@ -7,7 +7,6 @@
 <script>
 import HighScores from './components/HighScores.vue'
 import Background from './components/Background.vue'
-import movieQuote from 'popular-movie-quotes'
 import './assets/tailwind.css'
 
 export default {
@@ -15,10 +14,6 @@ export default {
   components: {
     HighScores,
     Background
-  },
-  mounted(){
-    let quotes = movieQuote.getAll()
-    console.log(quotes)
   }
 }
 </script>

@@ -6,18 +6,18 @@
                 <span class="grid justify-end items-center">Score: 0</span>
             </div>
             <div class="question grid grid-rows-5 justify-items-start text-4xl">
-                <p class="w-full text-center px-6 py-8 text-6xl">"I am a really difficult quote"</p>
+                <p class="w-full text-center px-6 py-8 text-6xl">"{{quote}}"</p>
                 <p class="grid items-center px-6">
-                    <button>movie 1</button>
+                    <button class="choice hover:text-blue-800">{{movie1}}</button>
                 </p>
                 <p class="grid items-center px-6">
-                    <button>movie 2</button>
+                    <button class="choice hover:text-blue-800">{{movie2}}</button>
                 </p>
                 <p class="grid items-center px-6">
-                    <button>movie 3</button>
+                    <button class="choice hover:text-blue-800">{{movie3}}</button>
                 </p>
                 <p class="grid items-center px-6">
-                    <button>movie 4</button>
+                    <button class="choice hover:text-blue-800">{{movie4}}</button>
                 </p>
             </div>
         </div>
@@ -25,8 +25,37 @@
 </template>
 
 <script>
+import movieQuote from 'popular-movie-quotes'
+
 export default {
-    name: 'Quiz'
+    name: 'Quiz',
+    setup(){
+        let quotes = movieQuote.getSomeRandom(4)
+        console.log(quotes)
+
+        const choice = Math.ceil(Math.random() * 4)
+        const quote = quotes[choice].quote
+        const movie1 = quotes[0].movie
+        const movie2 = quotes[1].movie
+        const movie3 = quotes[2].movie
+        const movie4 = quotes[3].movie
+
+        return {
+            quote,
+            movie1,
+            movie2,
+            movie3,
+            movie4
+        }
+    },
+    data(){
+        return {
+
+        }
+    },
+    mounted(){
+        
+    }
 }
 </script>
 
