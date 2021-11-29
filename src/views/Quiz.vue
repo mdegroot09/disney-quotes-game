@@ -19,9 +19,9 @@ export default {
 }
 .quizModule{
     width: calc(100vw - 50px);
-    max-width: 600px;
+    max-width: 800px;
     height: calc(100vh - 200px);
-    max-height: 400px;
+    max-height: 600px;
     background: blue;
 }
 </style>
