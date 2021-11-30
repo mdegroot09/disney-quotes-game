@@ -31,27 +31,6 @@ import {mapState} from 'vuex';
 export default {
     name: 'Quiz',
     data(){
-        // let quotes = movieQuote.getSomeRandom(40)
-        // console.log(quotes)
-
-        // let movie1 = quotes[0].movie
-        // let movie2 = quotes[1].movie
-        // let movie3 = quotes[2].movie
-        // let movie4 = quotes[3].movie
-        // let correctIndex = Math.floor(Math.random() * 4)
-        // let correctQuote = quotes[correctIndex].quote
-        // let currentQuestion = 0
-
-        // return {
-        //     quotes,
-        //     movie1,
-        //     movie2,
-        //     movie3,
-        //     movie4,
-        //     correctIndex,
-        //     correctQuote,
-        //     currentQuestion
-        // }
         return this.initiateQuiz()
     },
     methods: {
@@ -63,8 +42,7 @@ export default {
             let movie2 = quotes[1].movie
             let movie3 = quotes[2].movie
             let movie4 = quotes[3].movie
-            // let correctIndex = Math.floor(Math.random() * 4)
-            let correctIndex = 0
+            let correctIndex = Math.floor(Math.random() * 4)
             let correctQuote = quotes[correctIndex].quote
             let currentQuestion = 0
 
@@ -80,6 +58,7 @@ export default {
             }
         },
         checkIfCorrect(i){
+            if(this.currentQuestion >= 10){return}
             if(i === this.correctIndex){
                 this.$store.commit('updateCurrentScore', i)
             }
@@ -96,7 +75,6 @@ export default {
                 this.movie3 = this.quotes[this.currentQuestion * 4 + 2].movie
                 this.movie4 = this.quotes[this.currentQuestion * 4 + 3].movie
                 this.correctIndex = Math.floor(Math.random() * 4)
-                // this.correctIndex = 0
                 this.correctQuote = this.quotes[(this.currentQuestion * 4) + this.correctIndex].quote
             }
         }
