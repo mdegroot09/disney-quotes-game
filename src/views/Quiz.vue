@@ -6,18 +6,18 @@
                 <span class="grid justify-end items-center">Score: 0</span>
             </div>
             <div class="question grid grid-rows-5 justify-items-start text-4xl">
-                <p class="w-full text-center px-6 py-8 text-6xl">"{{quote}}"</p>
+                <p class="w-full text-center px-6 py-8 text-6xl">"{{getCorrectQuote}}"</p>
                 <p class="grid items-center px-6">
-                    <button class="choice hover:text-blue-800">{{movie1}}</button>
+                    <button class="choice hover:text-blue-800">a. {{movie1}}</button>
                 </p>
                 <p class="grid items-center px-6">
-                    <button class="choice hover:text-blue-800">{{movie2}}</button>
+                    <button class="choice hover:text-blue-800">b. {{movie2}}</button>
                 </p>
                 <p class="grid items-center px-6">
-                    <button class="choice hover:text-blue-800">{{movie3}}</button>
+                    <button class="choice hover:text-blue-800">c. {{movie3}}</button>
                 </p>
                 <p class="grid items-center px-6">
-                    <button class="choice hover:text-blue-800">{{movie4}}</button>
+                    <button class="choice hover:text-blue-800">d. {{movie4}}</button>
                 </p>
             </div>
         </div>
@@ -29,32 +29,46 @@ import movieQuote from 'popular-movie-quotes'
 
 export default {
     name: 'Quiz',
-    setup(){
-        let quotes = movieQuote.getSomeRandom(4)
+    data(){
+        let quotes = movieQuote.getSomeRandom(40)
         console.log(quotes)
 
-        const choice = Math.ceil(Math.random() * 4)
-        const quote = quotes[choice].quote
-        const movie1 = quotes[0].movie
-        const movie2 = quotes[1].movie
-        const movie3 = quotes[2].movie
-        const movie4 = quotes[3].movie
+        let movie1 = quotes[0].movie
+        let movie2 = quotes[1].movie
+        let movie3 = quotes[2].movie
+        let movie4 = quotes[3].movie
+        let correctIndex = Math.ceil(Math.random() * 4)
+        let correctQuote = quotes[correctIndex].quote
+        let currentQuestion = 0
 
         return {
-            quote,
+            quotes,
             movie1,
             movie2,
             movie3,
-            movie4
+            movie4,
+            correctIndex,
+            correctQuote,
+            currentQuestion
         }
     },
-    data(){
-        return {
-
+    methods: {
+        nextQuestion(){
+            this.currentQuestion++
+            this.movie1 = this.quotes[this.currentQuestion * 4].movie
+            this.movie2 = this.quotes[this.currentQuestion * 4 + 1].movie
+            this.movie3 = this.quotes[this.currentQuestion * 4 + 2].movie
+            this.movie4 = this.quotes[this.currentQuestion * 4 + 3].movie
+            this.correctIndex = (this.currentQuestion * 4) + (Math.floor(Math.random() * 4))
+            this.correctQuote = this.quotes[this.correctIndex].quote
+            console.log(this.correctIndex - (this.currentQuestion * 4))
+            console.log(this.correctQuote)
         }
     },
-    mounted(){
-        
+    computed: {
+        getCorrectQuote(){
+            return this.correctQuote
+        }
     }
 }
 </script>

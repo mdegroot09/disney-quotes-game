@@ -1,6 +1,5 @@
 <template>
-    <div class="scores w-screen h-auto font-bold">
-        <!-- <h3>Level: <span>Novice</span></h3> -->
+    <div class="scores w-screen h-auto font-bold text-2xl">
         <h3>High Score: <span>0</span></h3>
     </div>
 </template>
