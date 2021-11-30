@@ -3,21 +3,21 @@
         <div class="quizModule grid grid-rows-2">
             <div class="grid grid-cols-2 text-3xl">
                 <span class="grid justify-start items-center">Quote #1</span>
-                <span class="grid justify-end items-center">Score: 0</span>
+                <span class="grid justify-end items-center">Score: 0/{{currentQuestion}}</span>
             </div>
             <div class="question grid grid-rows-5 justify-items-start text-4xl">
-                <p class="w-full text-center px-6 py-8 text-6xl">"{{getCorrectQuote}}"</p>
+                <p class="w-full text-center px-6 py-8 text-6xl">"{{correctQuote}}"</p>
                 <p class="grid items-center px-6">
-                    <button class="choice hover:text-blue-800">a. {{movie1}}</button>
+                    <button class="choice hover:text-blue-800" @click="this.nextQuestion()">a. {{movie1}}</button>
                 </p>
                 <p class="grid items-center px-6">
-                    <button class="choice hover:text-blue-800">b. {{movie2}}</button>
+                    <button class="choice hover:text-blue-800" @click="this.nextQuestion()">b. {{movie2}}</button>
                 </p>
                 <p class="grid items-center px-6">
-                    <button class="choice hover:text-blue-800">c. {{movie3}}</button>
+                    <button class="choice hover:text-blue-800" @click="this.nextQuestion()">c. {{movie3}}</button>
                 </p>
                 <p class="grid items-center px-6">
-                    <button class="choice hover:text-blue-800">d. {{movie4}}</button>
+                    <button class="choice hover:text-blue-800" @click="this.nextQuestion()">d. {{movie4}}</button>
                 </p>
             </div>
         </div>
@@ -37,7 +37,7 @@ export default {
         let movie2 = quotes[1].movie
         let movie3 = quotes[2].movie
         let movie4 = quotes[3].movie
-        let correctIndex = Math.ceil(Math.random() * 4)
+        let correctIndex = Math.floor(Math.random() * 4)
         let correctQuote = quotes[correctIndex].quote
         let currentQuestion = 0
 
@@ -54,20 +54,18 @@ export default {
     },
     methods: {
         nextQuestion(){
-            this.currentQuestion++
-            this.movie1 = this.quotes[this.currentQuestion * 4].movie
-            this.movie2 = this.quotes[this.currentQuestion * 4 + 1].movie
-            this.movie3 = this.quotes[this.currentQuestion * 4 + 2].movie
-            this.movie4 = this.quotes[this.currentQuestion * 4 + 3].movie
-            this.correctIndex = (this.currentQuestion * 4) + (Math.floor(Math.random() * 4))
-            this.correctQuote = this.quotes[this.correctIndex].quote
-            console.log(this.correctIndex - (this.currentQuestion * 4))
+            console.log(this.correctIndex)
+            console.log(this.quotes[(this.currentQuestion * 4) + this.correctIndex].movie)
             console.log(this.correctQuote)
-        }
-    },
-    computed: {
-        getCorrectQuote(){
-            return this.correctQuote
+            if (this.currentQuestion < 9){
+                this.currentQuestion++
+                this.movie1 = this.quotes[this.currentQuestion * 4].movie
+                this.movie2 = this.quotes[this.currentQuestion * 4 + 1].movie
+                this.movie3 = this.quotes[this.currentQuestion * 4 + 2].movie
+                this.movie4 = this.quotes[this.currentQuestion * 4 + 3].movie
+                this.correctIndex = Math.floor(Math.random() * 4)
+                this.correctQuote = this.quotes[(this.currentQuestion * 4) + this.correctIndex].quote
+            }
         }
     }
 }
