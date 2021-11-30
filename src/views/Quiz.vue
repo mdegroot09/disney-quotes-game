@@ -60,7 +60,7 @@ export default {
         checkIfCorrect(i){
             if(this.currentQuestion >= 10){return}
             if(i === this.correctIndex){
-                this.$store.commit('updateCurrentScore', i)
+                this.$store.commit('updateCurrentScore')
             }
             this.nextQuestion()
         },

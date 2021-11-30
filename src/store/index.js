@@ -6,11 +6,11 @@ export default createStore({
         currentScore: 0
     },
     mutations: {
-        updateCurrentScore(state, i){
-            if(i > state.highScore){
-                state.highScore = i
-            }
+        updateCurrentScore(state){
             state.currentScore++
+            if(state.currentScore > state.highScore){
+                state.highScore = state.currentScore
+            }
         }
     }
 })

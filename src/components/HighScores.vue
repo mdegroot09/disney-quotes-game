@@ -1,12 +1,16 @@
 <template>
-    <div class="scores w-screen h-auto font-bold text-2xl">
-        <h3>High Score: <span>0</span></h3>
+    <div class="scores w-screen h-auto font-bold text-3xl">
+        <h3>High Score: <span>{{highScore}}</span></h3>
     </div>
 </template>
 
 <script>
-export default {
+import {mapState} from 'vuex'
 
+export default {
+    computed: mapState({
+        highScore: state => state.highScore
+    })
 }
 </script>
 
