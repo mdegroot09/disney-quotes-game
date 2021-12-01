@@ -1,7 +1,7 @@
 <template>
     <div class="background w-screen h-screen">
-        <img class="filmstrip" src="https://assets.webiconspng.com/uploads/2017/02/Film-Strip-Transparent-Icon.png" alt="film strip">
-        <img class="filmicon" src="http://cdn.onlinewebfonts.com/svg/img_469099.png" alt="film icon">
+        <!-- <img class="filmstrip" src="https://assets.webiconspng.com/uploads/2017/02/Film-Strip-Transparent-Icon.png" alt="film strip"> -->
+        <!-- <img class="filmicon" src="http://cdn.onlinewebfonts.com/svg/img_469099.png" alt="film icon"> -->
     </div>
 </template>
 
@@ -24,6 +24,6 @@
     padding-bottom: 100px;
     padding-left: 40px;
     transform: scale(-1, 1) rotate(-45deg);
-    max-height: 200px;
+    width: 8rem;
 }
 </style>
