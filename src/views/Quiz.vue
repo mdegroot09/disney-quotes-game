@@ -5,8 +5,8 @@
                 <span class="grid justify-start items-center">Quote #{{currentQuestion + 1}}</span>
                 <span class="grid justify-end items-center">Score: {{currentScore}}/{{completedQuestions}}</span>
             </div>
-            <div class="question grid grid-rows-5 justify-items-start text-4xl">
-                <p class="w-full text-center px-6 py-8 text-6xl">"{{correctQuote}}"</p>
+            <div class="question grid grid-rows-5 justify-items-start text-3xl">
+                <p class="w-full text-center px-6 py-8 text-4xl">"{{correctQuote}}"</p>
                 <p class="grid items-center px-6">
                     <button class="choice hover:text-blue-800" @click="this.checkIfCorrect(0)" ref="movie0">a. {{movie0}}</button>
                 </p>
@@ -149,6 +149,9 @@ export default {
 }
 .question {
     grid-template-rows: auto repeat(4, 1fr);
+}
+.choice {
+    padding: 10px 0;
 }
 .btn {
     font-size: 1.5rem/* 24px */;
