@@ -20,7 +20,7 @@
                     <button class="choice hover:text-blue-800" @click="this.checkIfCorrect(3)" ref="movie3">d. {{movie3}}</button>
                 </p>
             </div>
-            <div class="grid justify-center">
+            <div class="grid justify-center h-12">
                 <button class="btn hide" @click="this.nextQuestion()" ref="nextBtn">next</button>
                 <button class="btn hide" @click="this.newQuiz()" ref="newBtn">new</button>
             </div>
@@ -29,8 +29,9 @@
 </template>
 
 <script>
-import movieQuote from 'popular-movie-quotes'
 import {mapState} from 'vuex';
+import movieQuote from 'popular-movie-quotes'
+import ConfettiGenerator from "confetti-js";
 
 export default {
     name: 'Quiz',
@@ -49,6 +50,7 @@ export default {
             let completedQuestions = 0
             let currentQuestion = 0
             let responses = [{correctIndex, choice: null}]
+            let confetti = null
 
             return {
                 quotes,
@@ -60,7 +62,8 @@ export default {
                 correctQuote,
                 completedQuestions,
                 currentQuestion,
-                responses
+                responses,
+                confetti
             }
         },
         checkIfCorrect(i){
@@ -71,7 +74,10 @@ export default {
             this.completedQuestions++
             if(this.completedQuestions == 10){
                 this.$refs['nextBtn'].classList.value = 'hide'
-                this.$refs['newBtn'].classList.value = 'btn'
+                this.showConfetti()
+                setTimeout(() => {
+                    this.$refs['newBtn'].classList.value = 'btn'
+                }, 3000);
             }
             else {
                 this.$refs['nextBtn'].classList.value = 'btn'
@@ -126,6 +132,20 @@ export default {
             this.resetDisplays()
             this.$store.commit('resetCurrentScore')
             this.$refs['newBtn'].classList.value = 'btn hide'
+            this.hideConfetti()
+        },
+        showConfetti(){
+            let confettiSettings = {
+                target: 'my-canvas',
+                max: 200,
+                rotate: true,
+                clock: 15
+            };
+            this.confetti = new ConfettiGenerator(confettiSettings);
+            this.confetti.render();
+        },
+        hideConfetti(){
+            this.confetti.clear();
         }
     },
     computed: mapState({
@@ -166,8 +186,9 @@ export default {
     --tw-text-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-text-opacity));
     font-weight: 600;
+    display: block;
 }
 .hide {
-    opacity: 0;
+    display: none;
 }
 </style>

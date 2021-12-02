@@ -1,19 +1,19 @@
 <template>
   <HighScores/>
-  <Background/>
+  <Confetti/>
   <router-view/>
 </template>
 
 <script>
 import HighScores from './components/HighScores.vue'
-import Background from './components/Background.vue'
+import Confetti from './components/Confetti.vue'
 import './assets/tailwind.css'
 
 export default {
   name: 'App',
   components: {
     HighScores,
-    Background
+    Confetti
   }
 }
 </script>

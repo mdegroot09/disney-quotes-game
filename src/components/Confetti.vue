@@ -1,7 +1,6 @@
 <template>
     <div class="background w-screen h-screen">
-        <!-- <img class="filmstrip" src="https://assets.webiconspng.com/uploads/2017/02/Film-Strip-Transparent-Icon.png" alt="film strip"> -->
-        <!-- <img class="filmicon" src="http://cdn.onlinewebfonts.com/svg/img_469099.png" alt="film icon"> -->
+        <canvas id="my-canvas"></canvas>
     </div>
 </template>
 
