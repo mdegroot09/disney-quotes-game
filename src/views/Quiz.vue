@@ -67,11 +67,15 @@ export default {
             }
         },
         checkIfCorrect(i){
-            if(this.completedQuestions >= 10){
-                this.$refs['nextBtn'].classList.value = 'hide'
-                return
+
+            // avoid multiple guesses per question
+            if (this.currentQuestion < this.completedQuestions){
+                return 
             }
+
             this.completedQuestions++
+
+            // if end of quiz, show confetti and new button
             if(this.completedQuestions == 10){
                 this.$refs['nextBtn'].classList.value = 'hide'
                 this.showConfetti()
@@ -79,14 +83,20 @@ export default {
                     this.$refs['newBtn'].classList.value = 'btn'
                 }, 3000);
             }
+
+            // else show the next button
             else {
                 this.$refs['nextBtn'].classList.value = 'btn'
             }
+
+            // if correct
             if(i === this.correctIndex){
                 this.$store.commit('updateCurrentScore')
                 let correctRef = `movie${i}`
                 this.$refs[correctRef].classList.value = 'choice text-green-600'
             }
+
+            // if incorrect
             else {
                 let incorrectRef = `movie${i}` 
                 this.$refs[incorrectRef].classList.value = 'choice text-red-600'
