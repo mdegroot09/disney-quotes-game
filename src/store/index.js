@@ -11,6 +11,9 @@ export default createStore({
             if(state.currentScore > state.highScore){
                 state.highScore = state.currentScore
             }
+        },
+        resetCurrentScore(state){
+            state.currentScore = 0
         }
     }
 })

@@ -22,6 +22,7 @@
             </div>
             <div class="grid justify-center">
                 <button class="btn hide" @click="this.nextQuestion()" ref="nextBtn">next</button>
+                <button class="btn hide" @click="this.newQuiz()" ref="newBtn">new</button>
             </div>
         </div>
     </div>
@@ -70,6 +71,7 @@ export default {
             this.completedQuestions++
             if(this.completedQuestions == 10){
                 this.$refs['nextBtn'].classList.value = 'hide'
+                this.$refs['newBtn'].classList.value = 'btn'
             }
             else {
                 this.$refs['nextBtn'].classList.value = 'btn'
@@ -99,7 +101,7 @@ export default {
             if(this.completedQuestions >= 10){
                 return
             }
-            if (this.completedQuestions < 10){
+            else {
                 this.resetDisplays()
                 this.movie0 = this.quotes[this.completedQuestions * 4].movie
                 this.movie1 = this.quotes[this.completedQuestions * 4 + 1].movie
@@ -108,6 +110,22 @@ export default {
                 this.correctIndex = Math.floor(Math.random() * 4)
                 this.correctQuote = this.quotes[(this.completedQuestions * 4) + this.correctIndex].quote
             }
+        },
+        newQuiz(){
+            let data = this.initiateQuiz()
+            this.quotes = data.quotes
+            this.movie0 = data.movie0
+            this.movie1 = data.movie1
+            this.movie2 = data.movie2
+            this.movie3 = data.movie3
+            this.correctIndex = data.correctIndex
+            this.correctQuote = data.correctQuote
+            this.completedQuestions = data.completedQuestions
+            this.currentQuestion = data.currentQuestion
+            this.responses = data.responses            
+            this.resetDisplays()
+            this.$store.commit('resetCurrentScore')
+            this.$refs['newBtn'].classList.value = 'btn hide'
         }
     },
     computed: mapState({
