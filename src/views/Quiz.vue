@@ -30,8 +30,8 @@
 
 <script>
 import {mapState} from 'vuex';
-import movieQuote from 'popular-movie-quotes'
 import ConfettiGenerator from "confetti-js";
+import disneyQuotes from '../assets/disneyquotes.js'
 
 export default {
     name: 'Quiz',
@@ -40,7 +40,7 @@ export default {
     },
     methods: {
         initiateQuiz(){
-            let quotes = movieQuote.getSomeRandom(40)
+            let quotes = disneyQuotes
             let movie0 = quotes[0].movie
             let movie1 = quotes[1].movie
             let movie2 = quotes[2].movie
