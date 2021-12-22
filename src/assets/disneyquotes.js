@@ -21,7 +21,7 @@ const quotes = [{
 {
     quote: `Remember you're the one who can fill the world with sunshine.`,
     character: `Snow White`,
-    movie: `Snow White and the Seven Dwarfs`
+    movie: `Snow White and the Seven Dwarves`
 },
 {
     quote: `The very things that hold you down are going to lift you up.`,
@@ -704,11 +704,6 @@ const quotes = [{
     movie: `The Parent Trap`
 },
 {
-    quote: `Disappointments are to the soul what thunderstorms are to the air`,
-    character: `P.L. Travers`,
-    movie: `Saving Mr. Banks`
-},
-{
     quote: `They say if you dream a thing more than once, it's sure to come true`,
     character: `Aurora`,
     movie: `Sleeping Beauty`
@@ -866,12 +861,7 @@ const quotes = [{
 {
     quote: `I'm sure I'll get along somehow. Everything's going to be all right`,
     character: `Snow White`,
-    movie: `Snow White and the Seven Dwarfs`
-},
-{
-    quote: `Life is a harsh sentence to lay down for yourself`,
-    character: `Walt Disney`,
-    movie: `Saving Mr. Banks`
+    movie: `Snow White and the Seven Dwarves`
 },
 {
     quote: `Everything you see exists together in a delicate balance. As king, you need to understand that balance and respect all the creatures, from the crawling ant to the leaping antelope`,
