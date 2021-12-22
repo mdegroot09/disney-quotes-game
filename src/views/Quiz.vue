@@ -40,7 +40,8 @@ export default {
     },
     methods: {
         initiateQuiz(){
-            let quotes = disneyQuotes
+            let quotes = this.randomize(disneyQuotes)
+            let quotesCount = quotes.length
             let movie0 = quotes[0].movie
             let movie1 = quotes[1].movie
             let movie2 = quotes[2].movie
@@ -54,6 +55,7 @@ export default {
 
             return {
                 quotes,
+                quotesCount,
                 movie0,
                 movie1,
                 movie2,
@@ -65,6 +67,41 @@ export default {
                 responses,
                 confetti
             }
+        },
+        randomize(quotes){
+            let currentIndex = quotes.length,  randomIndex;
+
+            // While there remain elements to shuffle...
+            while (currentIndex != 0) {
+
+                // Pick a remaining element...
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex--;
+
+                // And swap it with the current element.
+                [quotes[currentIndex], quotes[randomIndex]] = [
+                quotes[randomIndex], quotes[currentIndex]];
+            }
+
+            // Make sure no two movies are the same inside any group of 4
+            for (let i = 0; i < 40; i += 4){
+                if (quotes[i + 1].movie === quotes[i].movie || quotes[i + 1].movie === quotes[i + 2].movie || quotes[i + 1].movie === quotes[i + 3].movie){
+                    quotes.splice(i + 1,1)
+                    i--
+                }
+                else if (quotes[i + 2].movie === quotes[i].movie || quotes[i + 2].movie === quotes[i + 1].movie || quotes[i + 2].movie === quotes[i + 3].movie){
+                    quotes.splice(i + 2,1)
+                    i--
+                }
+                else if (quotes[i + 3].movie === quotes[i].movie || quotes[i + 3].movie === quotes[i + 1].movie || quotes[i + 3].movie === quotes[i + 2].movie){
+                    quotes.splice(i + 3,1)
+                    i--
+                }
+            }
+
+            console.log(quotes)
+
+            return quotes;
         },
         checkIfCorrect(i){
 

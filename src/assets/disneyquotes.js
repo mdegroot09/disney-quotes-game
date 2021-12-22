@@ -4,22 +4,22 @@ const quotes = [{
     movie: `The Lion King`
 },
 {
-    quote: `You think the only people who are people, are the people who look and think like you. But if you walk the footsteps of a stranger, you’ll learn things you never knew you never knew.`,
+    quote: `You think the only people who are people, are the people who look and think like you. But if you walk the footsteps of a stranger, you'll learn things you never knew you never knew.`,
     character: `Pocahontas`,
     movie: `Pocahontas`
 },
 {
-    quote: `Because when I look at you, I can feel it. And I look at you and I’m home.`,
+    quote: `Because when I look at you, I can feel it. And I look at you and I'm home.`,
     character: `Dory`,
     movie: `Finding Nemo`
 },
 {
-    quote: `Love is putting someone else’s needs before yours.`,
+    quote: `Love is putting someone else's needs before yours.`,
     character: `Olaf`,
     movie: `Frozen`
 },
 {
-    quote: `Remember you’re the one who can fill the world with sunshine.`,
+    quote: `Remember you're the one who can fill the world with sunshine.`,
     character: `Snow White`,
     movie: `Snow White and the Seven Dwarfs`
 },
@@ -29,17 +29,17 @@ const quotes = [{
     movie: `Dumbo`
 },
 {
-    quote: `A true hero isn’t measured by the size of his strength, but by the strength of his heart.`,
+    quote: `A true hero isn't measured by the size of his strength, but by the strength of his heart.`,
     character: `Hercules`,
     movie: `Hercules`
 },
 {
-    quote: `I’d rather die tomorrow than live a hundred years without knowing you.`,
+    quote: `I'd rather die tomorrow than live a hundred years without knowing you.`,
     character: `John Smith`,
     movie: `Pocahontas`
 },
 {
-    quote: `How do you spell love? You don’t spell love. You feel it.`,
+    quote: `How do you spell love? You don't spell love. You feel it.`,
     character: `Piglet and Pooh`,
     movie: `Winnie the Pooh`
 },
@@ -49,7 +49,7 @@ const quotes = [{
     movie: `Winnie the Pooh`
 },
 {
-    quote: `My dream wouldn’t be complete without you in it.`,
+    quote: `My dream wouldn't be complete without you in it.`,
     character: `Tiana`,
     movie: `The Princess and the Frog`
 },
@@ -74,7 +74,7 @@ const quotes = [{
     movie: `Winnie the Pooh`
 },
 {
-    quote: `If watching is all you’re gonna do, then you’re gonna watch your life go by without ya.`,
+    quote: `If watching is all you're gonna do, then you're gonna watch your life go by without ya.`,
     character: `Laverne`,
     movie: `The Hunchback of Notre Dame`
 },
@@ -109,12 +109,12 @@ const quotes = [{
     movie: `Mulan`
 },
 {
-    quote: `You’re mad. Bonkers. Off your head … But I’ll tell you a secret … some of the best people are.`,
+    quote: `You're mad. Bonkers. Off your head … But I'll tell you a secret … some of the best people are.`,
     character: `Alice`,
     movie: `Alice in Wonderland`
 },
 {
-    quote: `When you’re the best of friends having so much fun together, you’re not even aware you’re such a funny pair.`,
+    quote: `When you're the best of friends having so much fun together, you're not even aware you're such a funny pair.`,
     character: `Best Of Friends by Pearl Bailey and Richard Johnston`,
     movie: `The Fox and the Hound`
 },
@@ -129,7 +129,7 @@ const quotes = [{
     movie: `Aladdin`
 },
 {
-    quote: `I’m only brave when I have to be. Being brave doesn’t mean you go looking for trouble.`,
+    quote: `I'm only brave when I have to be. Being brave doesn't mean you go looking for trouble.`,
     character: `Mufasa`,
     movie: `The Lion King`
 },
@@ -154,12 +154,12 @@ const quotes = [{
     movie: `Pirates of the Caribbean`
 },
 {
-    quote: `Don’t just fly, soar.`,
+    quote: `Don't just fly, soar.`,
     character: `Dumbo`,
     movie: `Dumbo`
 },
 {
-    quote: `Now, think of the happiest things. It’s the same as having wings.`,
+    quote: `Now, think of the happiest things. It's the same as having wings.`,
     character: `Peter Pan`,
     movie: `Peter Pan`
 },
@@ -195,7 +195,7 @@ const quotes = [{
 },
 {
     quote: `To face the future with another who means more than any other is to be loved.`,
-    character: ``,
+    character: `Bianca`,
     movie: `The Rescuers`
 },
 {
@@ -204,13 +204,9 @@ const quotes = [{
     movie: `The Incredibles`
 },
 {
-    quote: `You don’t have time to be timid. You must be bold and daring!`,
+    quote: `You don't have time to be timid. You must be bold and daring!`,
     character: `Lumiere`,
     movie: `Beauty and the Beast`
-},
-{
-    quote: `To laugh at yourself is to love yourself.`,
-    character: `Mickey Mouse`
 },
 {
     quote: `You were my new dream.`,
@@ -218,7 +214,7 @@ const quotes = [{
     movie: `Tangled`
 },
 {
-    quote: `You’re never too old to be young`,
+    quote: `You're never too old to be young`,
     character: `Happy`,
     movie: `Snow White and the Seven Dwarves`
 },
@@ -233,12 +229,12 @@ const quotes = [{
     movie: `The Princess And The Frog`
 },
 {
-    quote: `I don’t want to survive. I want to live.`,
+    quote: `I don't want to survive. I want to live.`,
     character: `The Captain`,
     movie: `Wall-E`
 },
 {
-    quote: `But they say if you dream a thing more than once, it’s sure to come true.`,
+    quote: `But they say if you dream a thing more than once, it's sure to come true.`,
     character: `Aurora`,
     movie: `Sleeping Beauty`
 },
@@ -268,17 +264,17 @@ const quotes = [{
     movie: `The Princess And The Frog`
 },
 {
-    quote: `When you hear that music playin’, hear what I’m saying, it make you feel all right.`,
+    quote: `When you hear that music playin', hear what I'm saying, it make you feel all right.`,
     character: `Tiana`,
     movie: `The Princess And The Frog`
 },
 {
-    quote: `I swear, I’m sweatin’ like a sinner in church!`,
+    quote: `I swear, I'm sweatin' like a sinner in church!`,
     character: `Charlotte`,
     movie: `The Princess And The Frog`
 },
 {
-    quote: `There’s no way I’m kissin’ a frog and eatin’ a bug on the same day.`,
+    quote: `There's no way I'm kissin' a frog and eatin' a bug on the same day.`,
     character: `Tiana`,
     movie: `The Princess And The Frog`
 },
@@ -288,8 +284,9 @@ const quotes = [{
     movie: `Dumbo`
 },
 {
-    quote: `What’s the matter with his ears? I don’t see nothin’ wrong with ’em. I think they’re cute.`,
-    character: `Timothy Q. Mouse, Dumbo`
+    quote: `What's the matter with his ears? I don't see nothin' wrong with 'em. I think they're cute.`,
+    character: `Timothy Q. Mouse`,
+    movie: `Dumbo`
 },
 {
     quote: `Embrace what makes you different.`,
@@ -302,7 +299,7 @@ const quotes = [{
     movie: `Frozen 2`
 },
 {
-    quote: `We’re calling this controlling what you can when things feel out of control.`,
+    quote: `We're calling this controlling what you can when things feel out of control.`,
     character: `Olaf`,
     movie: `Frozen 2`
 },
@@ -312,12 +309,12 @@ const quotes = [{
     movie: `Frozen 2`
 },
 {
-    quote: `I’m gonna do my best to take my place in the sun.`,
+    quote: `I'm gonna do my best to take my place in the sun.`,
     character: `Tiana`,
     movie: `The Princess And The Frog `
 },
 {
-    quote: `I’ve climbed the mountain, I’ve crossed the river, and I’m almost there.`,
+    quote: `I've climbed the mountain, I've crossed the river, and I'm almost there.`,
     character: `Tiana`,
     movie: `The Princess And The Frog`
 },
@@ -327,27 +324,27 @@ const quotes = [{
     movie: `The Princess And The Frog`
 },
 {
-    quote: `The wilderness isn’t quite what I expected. It’s wild!`,
+    quote: `The wilderness isn't quite what I expected. It's wild!`,
     character: `Russell`,
     movie: `Up`
 },
 {
-    quote: `There’s a great big hunk of world down there with no fence around it.`,
+    quote: `There's a great big hunk of world down there with no fence around it.`,
     character: `Tramp`,
     movie: `Lady & The Tramp`
 },
 {
-    quote: `See the line where the sky meets the sea, it calls me. And no one knows, how far I’ll go.`,
+    quote: `See the line where the sky meets the sea, it calls me. And no one knows, how far I'll go.`,
     character: `Moana`,
     movie: `Moana`
 },
 {
-    quote: `If you don’t know where you want to go, then it doesn’t matter which path you take.`,
+    quote: `If you don't know where you want to go, then it doesn't matter which path you take.`,
     character: `The Cheshire Cat`,
     movie: `Alice in Wonderland`
 },
 {
-    quote: `You control your destiny — you don’t need magic to do it. And there are no magical shortcuts to solving your problems.`,
+    quote: `You control your destiny — you don't need magic to do it. And there are no magical shortcuts to solving your problems.`,
     character: `Merida`,
     movie: `Brave`
 },
@@ -357,7 +354,7 @@ const quotes = [{
     movie: `Mulan`
 },
 {
-    quote: `Life’s not a spectator sport. If watchin’ is all you’re gonna do, then you’re gonna watch your life go by without ya.`,
+    quote: `Life's not a spectator sport. If watchin' is all you're gonna do, then you're gonna watch your life go by without ya.`,
     character: `Laverne`,
     movie: `The Hunchback of Notre Dame`
 },
@@ -367,7 +364,7 @@ const quotes = [{
     movie: `Ratatouille`
 },
 {
-    quote: `You’re in Paris now, baby. My town.`,
+    quote: `You're in Paris now, baby. My town.`,
     character: `Remy`,
     movie: `Ratatouille`
 },
@@ -378,7 +375,8 @@ const quotes = [{
 },
 {
     quote: `I have magic hair that glows when I sing.`,
-    character: `Rapunzel, Tangled`
+    character: `Rapunzel`,
+    movie: `Tangled`
 },
 {
     quote: `I like warm hugs.`,
@@ -386,7 +384,7 @@ const quotes = [{
     movie: `Frozen`
 },
 {
-    quote: `I’ve always loved the idea of summer, and sun, and all things hot.`,
+    quote: `I've always loved the idea of summer, and sun, and all things hot.`,
     character: `Olaf`, 
     movie: `Frozen`
 },
@@ -401,12 +399,12 @@ const quotes = [{
     movie: `Dumbo`
 },
 {
-    quote: `Today or never; that’s my motto.`,
+    quote: `Today or never; that's my motto.`,
     character: `Mary Poppins`, 
     movie: `Mary Poppins`
 },
 {
-    quote: `If ever there is a tomorrow when we’re not together, there is something you must always remember. You are braver than you believe, stronger than you seem, and smarter than you think. But the most important thing is, even if we’re apart, I’ll always be with you.`,
+    quote: `If ever there is a tomorrow when we're not together, there is something you must always remember. You are braver than you believe, stronger than you seem, and smarter than you think. But the most important thing is, even if we're apart, I'll always be with you.`,
     character: `Christopher Robin`, 
     movie: `Winnie the Pooh`
 },
@@ -416,27 +414,27 @@ const quotes = [{
     movie: `Meet the Robinsons`
 },
 {
-    quote: `Cheer up, child. It’ll turn out all right in the end. You’ll see.`,
+    quote: `Cheer up, child. It'll turn out all right in the end. You'll see.`,
     character: `Mrs. Potts`, 
     movie: `Beauty and the Beast`
 },
 {
-    quote: `I don’t know what I’m going to do with my life. But I do know I’m going to live every minute of it.`,
+    quote: `I don't know what I'm going to do with my life. But I do know I'm going to live every minute of it.`,
     character: `Joe Gardner`, 
     movie: `Soul`
 },
 {
-    quote: `There’s no one I’d rather be than me.`,
+    quote: `There's no one I'd rather be than me.`,
     character: `Ralph`, 
     movie: `Wreck-It Ralph`
 },
 {
-    quote: `I’ve come so far; I can’t go back to where I used to be.`,
+    quote: `I've come so far; I can't go back to where I used to be.`,
     character: `Jasmine`, 
     movie: `Aladdin`
 },
 {
-    quote: `You’ve gotta let go of that stuff from the past, because it just doesn’t matter! The only thing that matters is what you choose to be now.`,
+    quote: `You've gotta let go of that stuff from the past, because it just doesn't matter! The only thing that matters is what you choose to be now.`,
     character: `Po`, 
     movie: `Kung Fu Panda`
 },
@@ -456,12 +454,12 @@ const quotes = [{
     movie: `Winnie the Pooh`
 },
 {
-    quote: `All right, Lewis. Knock ’em dead. That was a figure of speech. Please don’t kill anyone.`,
+    quote: `All right, Lewis. Knock 'em dead. That was a figure of speech. Please don't kill anyone.`,
     character: `Wilbur`, 
     movie: `Meet the Robinsons`
 },
 {
-    quote: `I know where your head is, but I’m telling you, you have got to get out of the past and look to the future.`,
+    quote: `I know where your head is, but I'm telling you, you have got to get out of the past and look to the future.`,
     character: `Mildred`, 
     movie: `Meet the Robinsons`
 },
@@ -486,7 +484,7 @@ const quotes = [{
     movie: `The Hunchback of Notre Dame`
 },
 {
-    quote: `Just because it’s what’s done, doesn’t mean it’s what should be done`,
+    quote: `Just because it's what's done, doesn't mean it's what should be done`,
     character: `Cinderella`,
     movie: `Cinderella`
 },
@@ -501,7 +499,7 @@ const quotes = [{
     movie: `The Princess and the Frog`
 },
 {
-    quote: `Can anybody be happy if they aren’t free?`,
+    quote: `Can anybody be happy if they aren't free?`,
     character: `Belle`,
     movie: `Beauty and the Beast`
 },
@@ -526,7 +524,7 @@ const quotes = [{
     movie: `The Incredibles`
 },
 {
-    quote: `If you can’t say something nice, don’t say nothing at all`,
+    quote: `If you can't say something nice, don't say nothing at all`,
     character: `Thumper`,
     movie: `Bambi`
 },
@@ -541,12 +539,12 @@ const quotes = [{
     movie: `Lilo & Stitch`
 },
 {
-    quote: `Because it’s not worth winning if you can’t win big`,
+    quote: `Because it's not worth winning if you can't win big`,
     character: `Coach Jack Reilly`,
     movie: `The Mighty Ducks`
 },
 {
-    quote: `You want something done, you’ve got to do it yourself`,
+    quote: `You want something done, you've got to do it yourself`,
     character: `Sebastian`,
     movie: `The Little Mermaid`
 },
@@ -561,7 +559,7 @@ const quotes = [{
     movie: `Mary Poppins`
 },
 {
-    quote: `Being brave doesn’t mean you go looking for trouble`,
+    quote: `Being brave doesn't mean you go looking for trouble`,
     character: `Mufasa`,
     movie: `The Lion King`
 },
@@ -571,7 +569,7 @@ const quotes = [{
     movie: `Toy Story`
 },
 {
-    quote: `Life’s a little bit messy. We all make mistakes. No matter what type of animal you are, change starts with you`,
+    quote: `Life's a little bit messy. We all make mistakes. No matter what type of animal you are, change starts with you`,
     character: `Judy Hopps`,
     movie: `Zootopia`
 },
@@ -586,7 +584,7 @@ const quotes = [{
     movie: `Up`
 },
 {
-    quote: `I don’t want to survive. I want to live`,
+    quote: `I don't want to survive. I want to live`,
     character: `Solomon Northup`,
     movie: `WALL-E`
 },
@@ -601,17 +599,17 @@ const quotes = [{
     movie: `Miracle`
 },
 {
-    quote: `I’m a damsel, I’m in distress, I can handle this. Have a nice day`,
+    quote: `I'm a damsel, I'm in distress, I can handle this. Have a nice day`,
     character: `Meg`,
     movie: `Hercules`
 },
 {
-    quote: `It’s up to you how far you go. If you don’t try, you’ll never know`,
+    quote: `It's up to you how far you go. If you don't try, you'll never know`,
     character: `Merlin`,
     movie: `The Sword in the Stone`
 },
 {
-    quote: `If watchin’ is all you’re gonna do, then you’re gonna watch your life go by without ya`,
+    quote: `If watchin' is all you're gonna do, then you're gonna watch your life go by without ya`,
     character: `Laverne`,
     movie: `The Hunchback of Notre Dame`
 },
@@ -626,17 +624,17 @@ const quotes = [{
     movie: `Tarzan`
 },
 {
-    quote: `That’s a pie-crust promise. Easily made, easily broken`,
+    quote: `That's a pie-crust promise. Easily made, easily broken`,
     character: `Mary Poppins`,
     movie: `Mary Poppins`
 },
 {
-    quote: `If you’re going hard enough left, you’ll find yourself turning right`,
+    quote: `If you're going hard enough left, you'll find yourself turning right`,
     character: `Doc Hudson`,
     movie: `Cars`
 },
 {
-    quote: `A true hero isn’t measured by the size of his strength but by the strength of his heart`,
+    quote: `A true hero isn't measured by the size of his strength but by the strength of his heart`,
     character: `Zeus`,
     movie: `Hercules`
 },
@@ -651,7 +649,7 @@ const quotes = [{
     movie: `Mary Poppins Returns`
 },
 {
-    quote: `When life gets you down you know what you’ve gotta do? Just keep swimming`,
+    quote: `When life gets you down you know what you've gotta do? Just keep swimming`,
     character: `Dory`,
     movie: `Finding Nemo`
 },
@@ -676,7 +674,7 @@ const quotes = [{
     movie: `Tangled`
 },
 {
-    quote: `You’re mad. Bonkers. Off your head. But I’ll tell you a secret, all the best people are`,
+    quote: `You're mad. Bonkers. Off your head. But I'll tell you a secret, all the best people are`,
     character: `Alice`,
     movie: `Alice in Wonderland`
 },
@@ -711,7 +709,7 @@ const quotes = [{
     movie: `Saving Mr. Banks`
 },
 {
-    quote: `They say if you dream a thing more than once, it’s sure to come true`,
+    quote: `They say if you dream a thing more than once, it's sure to come true`,
     character: `Aurora`,
     movie: `Sleeping Beauty`
 },
@@ -726,12 +724,12 @@ const quotes = [{
     movie: `The Princess Diaries`
 },
 {
-    quote: `In every job that must be done, there is an element of fun. You find the fun and snap, the job’s a game`,
+    quote: `In every job that must be done, there is an element of fun. You find the fun and snap, the job's a game`,
     character: `Mary Poppins`,
     movie: `Mary Poppins`
 },
 {
-    quote: `Love is putting someone else’s needs before yours`,
+    quote: `Love is putting someone else's needs before yours`,
     character: `Olaf`,
     movie: `Frozen`
 },
@@ -741,12 +739,12 @@ const quotes = [{
     movie: `Miracle`
 },
 {
-    quote: `I remember daddy told me ‘Fairytales can come true’. But you’ve got to make them happen, it all depends on you`,
+    quote: `I remember daddy told me 'Fairytales can come true'. But you've got to make them happen, it all depends on you`,
     character: `Tiana`,
     movie: `The Princess and the Frog`
 },
 {
-    quote: `I don’t see how a world that makes such wonderful things could be bad`,
+    quote: `I don't see how a world that makes such wonderful things could be bad`,
     character: `Ariel`,
     movie: `The Little Mermaid`
 },
@@ -761,7 +759,7 @@ const quotes = [{
     movie: `Moana`
 },
 {
-    quote: `Goodbye may seem forever, farewell is like the end. But in my heart’s a memory, and there you’ll always be`,
+    quote: `Goodbye may seem forever, farewell is like the end. But in my heart's a memory, and there you'll always be`,
     character: `Widow Tweed`,
     movie: `The Fox and the Hound`
 },
@@ -771,7 +769,7 @@ const quotes = [{
     movie: `Big Hero 6`
 },
 {
-    quote: `If you ain’t scared, you ain’t alive`,
+    quote: `If you ain't scared, you ain't alive`,
     character: `Nash`,
     movie: `The Good Dinosaur`
 },
@@ -781,7 +779,7 @@ const quotes = [{
     movie: `Remember the Titans`
 },
 {
-    quote: `You don’t have time to be timid. You must be bold. Daring`,
+    quote: `You don't have time to be timid. You must be bold. Daring`,
     character: `Lumiere`,
     movie: `Beauty and the Beast`
 },
@@ -806,12 +804,12 @@ const quotes = [{
     movie: `Ratatouille`
 },
 {
-    quote: `We didn’t set out to be superheroes. But sometimes life doesn’t go the way you planned`,
+    quote: `We didn't set out to be superheroes. But sometimes life doesn't go the way you planned`,
     character: `Hiro`,
     movie: `Big Hero 6`
 },
 {
-    quote: `When I look at you, I can feel it. And I, I look at you and…I’m home`,
+    quote: `When I look at you, I can feel it. And I, I look at you and…I'm home`,
     character: `Dory`,
     movie: `Finding Nemo`
 },
@@ -821,7 +819,7 @@ const quotes = [{
     movie: `Brave`
 },
 {
-    quote: `We may have our differences, but nothing’s more important than family`,
+    quote: `We may have our differences, but nothing's more important than family`,
     character: `Miguel`,
     movie: `Coco`
 },
@@ -846,7 +844,7 @@ const quotes = [{
     movie: `The Lizzie McGuire Movie`
 },
 {
-    quote: `The thing that makes Woody special is that he’ll never give up on you`,
+    quote: `The thing that makes Woody special is that he'll never give up on you`,
     character: `Andy`,
     movie: `Toy Story 3`
 },
@@ -866,7 +864,7 @@ const quotes = [{
     movie: `Dumbo`
 },
 {
-    quote: `I’m sure I’ll get along somehow. Everything’s going to be all right`,
+    quote: `I'm sure I'll get along somehow. Everything's going to be all right`,
     character: `Snow White`,
     movie: `Snow White and the Seven Dwarfs`
 },
@@ -901,17 +899,17 @@ const quotes = [{
     movie: `An Extremely Goofy Movie`
 },
 {
-    quote: `Sometimes you try your hardest, but things don’t work out the way you want them to`,
+    quote: `Sometimes you try your hardest, but things don't work out the way you want them to`,
     character: `Nani`,
     movie: `Lilo & Stitch`
 },
 {
-    quote: `A lie keeps growing and growing until it’s as plain as the nose on your face`,
+    quote: `A lie keeps growing and growing until it's as plain as the nose on your face`,
     character: `Blue Fairy`,
     movie: `Pinocchio`
 },
 {
-    quote: `No matter what anyone says, you’ll always be a prince to me`,
+    quote: `No matter what anyone says, you'll always be a prince to me`,
     character: `Genie`,
     movie: `Aladdin`
 },
@@ -931,7 +929,7 @@ const quotes = [{
     movie: `Meet the Robinsons`
 },
 {
-    quote: `Everybody’s got problems. The world is full of problems`,
+    quote: `Everybody's got problems. The world is full of problems`,
     character: `Merlin`,
     movie: `The Sword in the Stone`
 },
@@ -946,12 +944,12 @@ const quotes = [{
     movie: `Robin Hood`
 },
 {
-    quote: `I’m bad, and that’s good. I will never be good, and that’s not bad. There’s no one I’d rather be than me`,
+    quote: `I'm bad, and that's good. I will never be good, and that's not bad. There's no one I'd rather be than me`,
     character: `Ralph`,
     movie: `Wreck-It-Ralph`
 },
 {
-    quote: `There’s always a chance, Doctor, as long as one can think`,
+    quote: `There's always a chance, Doctor, as long as one can think`,
     character: `Basil`,
     movie: `The Great Mouse Detective`
 },
